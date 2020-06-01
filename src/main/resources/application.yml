@@ -1,0 +1,8 @@
+server:  port: 8000
+spring:
+  application:
+    name: serviceCustomer
+  profiles:    active:    - dev
+  cloud:    config:      uri:      - http://localhost:8888/
+  jpa:    database-platform: org.hibernate.dialect.H2Dialect
+  h2:    console:      enabled: true
