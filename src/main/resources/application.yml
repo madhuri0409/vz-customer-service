@@ -1,5 +1,4 @@
-server:  port: 8000
-spring:
+server:  port: 8000logging:  file:     path: C:/elk/vz_customer_service  level:    org.springframework.web: DEBUG    org.hibernate: DEBUG    com.verizon.customer: DEBUG  pattern:    level: "%d %-5level [%thread] %logger : %msg%n"spring:
   application:
     name: serviceCustomer
   profiles:    active:    - dev
